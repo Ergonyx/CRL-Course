@@ -1,0 +1,44 @@
+:root {
+    // COLORS
+    --bg: #a8dadc;
+    --highlight: #f1faee;
+    --panelbg: #61a8d4;
+    --iCatcher: #e63946;
+    --font: #1d3557;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+    color: var(--font);
+    background-color: var(--bg);
+}
+#wrapper {
+
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.header {
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 2em;
+}
+.dayNotes {
+    background-color: var(--panelbg);
+    padding: 2em;
+}
+.lessonTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.ilch {
+    background-color: var(--highlight);
+    padding: 0 .25rem;
+    border-radius: .3rem;
+    font-weight: 700;
+}
