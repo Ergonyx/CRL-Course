@@ -10,11 +10,29 @@
 <body>
     <div id="wrapper">
         <div class="container">
-            <header class="header">Notes!</header>
+            <header class="header">
+                MY NOTES!
+                <p>Hello there!  Here is where I'll be putting all my notes from Kevin Powell's course on Conquering Responsive Layouts!  This page will evolve as I learn more stuff while the files for each days exercises will focus on that days specific topic.</p>
+                <p>You can find all the source code <a href="https://github.com/Ergonyx/CRL-Course">HERE</a>!</p>
+            </header>
             <section class="dayNotes">
                 <div class="lessonTitle">Day 1 - Percentages and Heights</div>
                 <p>Leave <span class="ilch">width</span> and <span class="ilch">height</span> alone!  They're responsive by default!  If you MUST change them, use percentages!</p>
+                <p style="width: 75%;">The DEFAULT width of a block level element (div, p, h1, etc) is always 100% -- That's 100 PERCENT!  <strong>NOTE:</strong>  Percentages are based on the parent element.  For instance, this paragraph has a <span class="ilch">width</span> of <span class="ilch">75%</span> of the blue box that it is in.  The blue box has a <span class="ilch">width</span> of <span class="ilch">80%</span> of the overall screen space.</p>
+                <div class="example">
+                    <p class="box">CSS IS AWESOME</p>
+                    <p>The example to the left demonstrates the issues mentioned in the paragraphs above and below.</p>
+                </div>
+                <p style="width: 900px;"><span class="ilch">width: 900px;</span> will not get any smaller (or larger) than that 900 pixels.  This paragraph is a prime example of what could go wrong.  The same applies when setting a <span class="ilch">height</span> except the text will overflow below the element.</p>
+                
+                <p>By setting the <span class="ilch">width</span> to <span class="ilch">900px</span> the previous line will cause devices with a width of less than 900 pixels to have a horizontal scrollbar.</p>
+                <hr/>
+                <p class="quote">If you need to give something a height, don't.  --  Kevin Powell</p>
+
             </section>
+            <footer class="footer">
+                &copy;2021 Alex Richardson
+            </footer>
         </div>
     </div>
 </body>
