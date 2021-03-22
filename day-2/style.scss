@@ -1,0 +1,32 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    font-size: 10px;
+}
+
+.ems {
+    text-align: center;
+    width: 50%;
+    margin: 0 1em;
+    font-size: 1.5em; // 15px
+}
+.ems > p {
+    font-size: 1.5em; // 22.5px
+}
+
+.rems {
+    text-align: center;
+    width: 50%;
+    margin: 0 1rem;
+    font-size: 1rem;
+}

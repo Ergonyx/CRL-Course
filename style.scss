@@ -38,6 +38,7 @@ body {
     background-color: var(--panelbg);
     padding: 2em;
     border-radius: 1rem;
+    margin: 1rem;
 }
 .lessonTitle {
     font-size: 1.5rem;
@@ -76,4 +77,29 @@ body {
     font-size: 1.52rem;
     line-height: 1.5rem;
     margin-right: 1em;
+}
+
+.em-parent {
+    font-size: 1.1em;
+}
+.em-child {
+    font-size: 1.1em;
+}
+.em-child > p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.btn-vars {
+    font-size: 16px;
+}
+.em-btn {
+    // font-size: 1em;
+    padding: 1em;
+    margin-right: 1em;
+}
+.rem-btn {
+    // font-size: 1rem;
+    padding: 1rem;
+    margin-left: 1rem;
 }

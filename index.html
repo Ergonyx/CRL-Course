@@ -31,6 +31,29 @@
                 <p class="quote">"If you need to give something a height, don't."  --  Kevin Powell</p>
 
             </section>
+
+            <section class="dayNotes">
+                <div class="lessonTitle">Day 2 - Getting Familiar With Relative Units</div>
+                <p><span class="ilch">em</span> and <span class="ilch">rem</span> are relative units of measurement based on the <span class="ilch">font-size</span> of either the parent or root (html) element.</p>
+                <p><span class="ilch">em</span> changes based on the <span class="ilch">font-size</span> of the parent element (or reverts to the default of 16px.  <span class="ilch">em</span> also compounds as you go.  Example below.</p>
+                <div class="em-parent">
+                    <span class="ilch">font-size: 1.1em;</span> is 16 * 1.1 = 17.6px.
+                    <div class="em-child">
+                        <span class="ilch">font-size: 1.1em;</span> is 16 * 1.1 (P) * 1.1 (C) = 19.36px.
+                        <p><span class="ilch">font-size: 1.1em;</span> is 16 * 1.1 (P) * 1.1 (C) * 1.1 (this) = 21.296px.</p>
+                    </div>
+                </div>
+                <p>You can calculate the <span class="ilch">em</span> equivalent for any pixel value with the formula <span class="ilch">em = desired element pixel value / parent element font-size in pixels.</span></p>
+                <p><span class="ilch">rem</span> values were invented to sidestep the compounding problem of <span class="ilch">em</span> units.
+                <span class="ilch">rem</span> takes its size from the root (html) element allowing for a standard unit of measurement compared to the calculated <span class="ilch">em</span> units.</p>
+                <p>These two buttons are identical except for the units used for padding and margin.</p>
+                <div class="btn-vars">
+                    <button class="em-btn">Test</button> | <button class="rem-btn">Test</button>
+                </div>
+
+            </section>
+
+
             <footer class="footer">
                 &copy;2021 Alex Richardson (YAY!)
             </footer>
