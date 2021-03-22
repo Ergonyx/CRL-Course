@@ -29,7 +29,7 @@ body {
   font-size: 3.5em;
   font-weight: 700;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 1rem;
   background-color: var(--iCatcher);
   border-radius: 1rem;
@@ -107,18 +107,26 @@ body {
 }
 
 .btn-vars {
-  font-size: 16px;
+  font-size: 20px;
+  border: 1px solid var(--font);
+  padding: 1rem;
 }
 
 .em-btn {
-  font-size: 1em;
   padding: 1em;
   margin-right: 1em;
 }
 
 .rem-btn {
-  font-size: 1rem;
   padding: 1rem;
   margin-left: 1rem;
+}
+
+.fs1em {
+  font-size: 1em;
+}
+
+.fs1rem {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

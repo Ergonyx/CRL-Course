@@ -47,10 +47,21 @@
                 <p><span class="ilch">rem</span> values were invented to sidestep the compounding problem of <span class="ilch">em</span> units.
                 <span class="ilch">rem</span> takes its size from the root (html) element allowing for a standard unit of measurement compared to the calculated <span class="ilch">em</span> units.</p>
                 <p>These two buttons are identical except for the units used for padding and margin.</p>
-                <div class="btn-vars">
-                    <button class="em-btn">Test</button> | <button class="rem-btn">Test</button>
+                <div>
+                    <button class="em-btn">EM</button> | <button class="rem-btn">REM</button>
                 </div>
-
+                <p>As you can see, the butto padding is different sizes which was unexpected.  This has something to do with something called <strong>User Agent Styling</strong>.  My understanding is that this is the "defaults" of your browsers rendering engine for specific elements which, in this case of buttons, is a font size of 13.33px which means the padding on the <span class="ilch">em</span> button is 13.33px instead of the expected 16px I thought it would inherit from it's parent element.</p>
+                <p>By setting a <span class="ilch">font-size: 16px;</span> (or the <span class="ilch">em</span>/<span class="ilch">rem</span> units) to these buttons will correct this issue.  See Below.</p>
+                <div>
+                    <button class="em-btn fs1em">EM</button> | <button class="rem-btn fs1rem">REM</button>
+                </div>
+                <p>These buttons now have the same sizes.  However, if I adjust the <span class="ilch">font-size</span> of the parent <span class="ilch">div</span> of the buttons, the button using <span class="ilch">em</span> units will change size while the button using <span class="ilch">rem</span> units will remain unchanged.  See below.</p>
+                <div class="btn-vars">
+                    Parent <span class="ilch">div</span> with font size of 20px.
+                    <p><button class="em-btn fs1em">EM</button> | <button class="rem-btn fs1rem">REM</button></p>
+                </div>
+                <hr>
+                <strong>Conclusion</strong>: I likely won't use <span class="ilch">em</span> outside of padding and/or margin unless I use a CSS reset such as normalize.css to minimize the inconsistencies I've encountered today.
             </section>
 
 
